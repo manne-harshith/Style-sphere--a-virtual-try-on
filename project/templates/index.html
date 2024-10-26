@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Dressing Room</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='style.css')}}">
+</head>
+<body>
+    <center>
+        <h1>Try-on Off shirts</h1>
+        <div class="hero">
+            <label for="input-file" id="drop-area">
+                <input type="file" id="input-file" accept="image/*" hidden>
+                <div id="img-view">
+                    <img src="{{url_for('static',filename='icon.png')}}" alt="">
+                    <p>Drag and drop or click here<br>to upload image</p>
+                </div>
+            </label>
+             <div class="video-container">
+                    <img id="video_feed" src="">
+                </div>
+             <div id="image-gallery">
+                <img src="{{url_for('static',filename='images/10000.png')}}" alt="Image 1" class="image">
+                <img src="{{url_for('static',filename='images/10001.png')}}" alt="Image 2" class="image">
+                <img src="{{url_for('static',filename='images/10002.png')}}" alt="Image 3" class="image">
+                <img src="{{url_for('static',filename='images/10003.png')}}" alt="Image 4" class="image">
+                <img src="{{url_for('static',filename='images/10004.png')}}" alt="Image 5" class="image">
+                <img src="{{url_for('static',filename='images/10005.png')}}" alt="Image 6" class="image">
+                <img src="{{url_for('static',filename='images/10006.png')}}" alt="Image 7" class="image">
+                <img src="{{url_for('static',filename='images/10007.png')}}" alt="Image 8" class="image">
+                <img src="{{url_for('static',filename='images/10008.png')}}" alt="Image 9" class="image">
+                <img src="{{url_for('static',filename='images/10009.png')}}" alt="Image 10" class="image">
+                <img src="{{url_for('static',filename='images/10010.png')}}" alt="Image 11" class="image">
+                <img src="{{url_for('static',filename='images/10011.png')}}" alt="Image 12" class="image">
+                <img src="{{url_for('static',filename='images/10012.png')}}" alt="Image 13" class="image">
+                <img src="{{url_for('static',filename='images/10013.png')}}" alt="Image 14" class="image">
+                <img src="{{url_for('static',filename='images/10014.png')}}" alt="Image 15" class="image">
+                <img src="{{url_for('static',filename='images/10015.png')}}" alt="Image 16" class="image">
+                <img src="{{url_for('static',filename='images/10016.png')}}" alt="Image 17" class="image">
+                <img src="{{url_for('static',filename='images/10017.png')}}" alt="Image 18" class="image">
+                <img src="{{url_for('static',filename='images/10018.png')}}" alt="Image 19" class="image">
+                <img src="{{url_for('static',filename='images/10019.png')}}" alt="Image 20" class="image">
+                <img src="{{url_for('static',filename='images/10020.png')}}" alt="Image 21" class="image">
+                <img src="{{url_for('static',filename='images/10021.png')}}" alt="Image 22" class="image">
+                <img src="{{url_for('static',filename='images/10022.png')}}" alt="Image 23" class="image">
+                <img src="{{url_for('static',filename='images/10023.png')}}" alt="Image 24" class="image">
+                <img src="{{url_for('static',filename='images/10024.png')}}" alt="Image 25" class="image">
+                <img src="{{url_for('static',filename='images/10025.png')}}" alt="Image 26" class="image">
+            </div>
+            
+          </div>
+          <div class="btn">
+            <button id="start_button">Start</button>
+            <button id="stop_button" >Stop</button>
+       </div>
+    </center>
+    <script src="{{url_for('static',filename='script.js')}}"></script>
+</body>
+</html>
